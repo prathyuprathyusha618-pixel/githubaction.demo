@@ -1,0 +1,10 @@
+name: Hello world
+on: workflow_dispatch
+jobs:
+  hema:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello step
+        run: echo "this is line" 
+             echo "this is line 2"
+        
