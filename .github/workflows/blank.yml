@@ -1,12 +1,18 @@
 name: Hello world
 on: workflow_dispatch
 jobs:
-  hema:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Hello step
-        run: echo "this is line" 
+        run: echo "this is line 1" 
              echo "this is line 2"
+ test:
+   run-on: ubuntu-latest
+   steps: 
+     - name: My common steps
+       run: echo "run the test one"
+            echo "hello my git"
         
       
         
