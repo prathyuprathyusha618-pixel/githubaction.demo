@@ -5,3 +5,5 @@ def test_add():
 
 def test_subtract():
     assert subtract(5, 2) == 3
+def test_square():
+    assert_square(2,2) == 4
