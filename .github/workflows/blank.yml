@@ -1,0 +1,28 @@
+#scalars
+name: prathyusha
+location: Bangulore
+Profession: no job
+#list
+Hobbies: 
+  -Reading
+  -writting
+  -practics
+  #mapping
+Favoritecolour: 
+  -blue
+  -green
+  -Red 
+Playinggames: 
+  -hokey
+  -ball
+#multilinescalar
+whatisthisiamlearn: |
+  i am learn scalars
+  i am learn list
+  i am learn mapping
+  i am learn multilinescalar
+  all are scalars,list,mapping and multiline
+
+      
+      
+        
