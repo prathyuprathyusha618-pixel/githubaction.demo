@@ -1,10 +1,11 @@
-name: Python Test
+name: Python Calculator CI
 
 on:
   push:
-    branches:
-      - main
-  workflow_dispatch:
+    branches: [main]
+
+  pull_request:
+    branches: [main]
 
 jobs:
   test:
@@ -14,14 +15,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: '3.12'
 
       - name: Install pytest
         run: pip install pytest
 
       - name: Run tests
         run: pytest
-        
